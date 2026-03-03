@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES2020",
+        "composite": true,
+        "allowJs": true, // Permite archivos JS
+        "checkJs": false, // Opcional: cámbialo a true si quieres que TS valide errores en tu JS
+        "declaration": true, // ¡VITAL! Genera los tipos para que 'api' los entienda
+        "emitDeclarationOnly": true, // Como es JS, solo queremos que TS genere los archivos de tipos .d.ts
+        "outDir": "./dist",
+        "rootDir": "."
+    },
+    "include": [
+        "**/*.js"
+    ]
+}

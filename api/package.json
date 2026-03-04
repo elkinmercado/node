@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npx tsc server.ts",
-    "watch": "tsc -b -w --clean server.ts",
-    "start:api": "node server.js",
-    "dev": "npm run build && npm run start:api"
+    "clean": "rm -rf dist",
+    "build": "tsc -b",
+    "start:api": "tsx server.ts",
+    "dev": "npm run clean && npm run build && npm run start:api"
   },
   "devDependencies": {
+    "tsx": "^4.21.0",
     "typescript": "^5.0.0"
   }
 }
